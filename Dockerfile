@@ -3,4 +3,4 @@ RUN pip install streamlit pandas gtts openai pydub imageio-ffmpeg ffprobe
 
 COPY ./ /app
 WORKDIR /app
-CMD ["streamlit", "run", "app.py", "--server.port", "80", "--server.enableCORS", "false"]
+CMD ["streamlit", "run", "app.py", "--server.port", "8080", "--server.enableCORS", "false"]
